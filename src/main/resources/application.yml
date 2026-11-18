@@ -8,12 +8,12 @@ spring:
     gateway:
       routes:
         - id: user-service-route
-          uri: http://localhost:8081
+          uri: https://user-service-jkxh.onrender.com
           predicates:
             - Path=/users/**
 
         - id: order-service-route
-          uri: http://localhost:8082
+          uri: https://order-service-lnpa.onrender.com
           predicates:
             - Path=/orders/**
 
